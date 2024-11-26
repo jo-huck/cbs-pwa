@@ -56,7 +56,7 @@
       </div>
     </div>
   </section>
-
+    <div id="map"></div>
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
@@ -133,8 +133,18 @@
       </div>
     </div>
   </div>
-  <div id="map"></div>
-  
+  <div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 WackenGuide, Inc</p>
+  </footer>
+</div>
   </main>
   <style>
     #map {
@@ -143,20 +153,23 @@
   </style>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
-var map = L.map('map').setView([51.505, -0.09], 13);
+var map = L.map('map').setView([54.021694, 9.375860], 15.5);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
-							     .openPopup();
+    L.marker([54.021467, 9.374288]).addTo(map)
+    .bindPopup('Willkommen in Wacken')
+    .openPopup();
+
+    L.marker([54.021625, 9.370201]).addTo(map)
+    .bindPopup('Willkommen in Wacken')
+
+    L.marker([54.023966, 9.367980]).addTo(map)
+    .bindPopup('Willkommen in Wacken')
     
   </script>
-  <button type="button" class="btn btn-primary">Primary</button>
-    <h1>Hallo, Welt!</h1>
-
     <!-- Optional JavaScript -->
     <!-- jQuery und Popper.js -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
